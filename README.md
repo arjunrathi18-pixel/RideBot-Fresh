@@ -1,2 +1,0 @@
-# RideBot
-Flutter Android App
