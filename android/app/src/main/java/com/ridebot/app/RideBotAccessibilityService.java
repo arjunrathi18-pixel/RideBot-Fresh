@@ -120,7 +120,17 @@ public class RideBotAccessibilityService extends AccessibilityService {
                 @Override
                 public void run() {
 
-                    clickAccept(root);
+                    boolean decision =
+checkWithFilter(
+screenText
+);
+
+
+if(decision){
+
+clickAccept(root);
+
+}
 
                 }
 
