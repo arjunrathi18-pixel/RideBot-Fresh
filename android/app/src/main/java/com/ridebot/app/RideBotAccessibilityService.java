@@ -103,6 +103,30 @@ public class RideBotAccessibilityService extends AccessibilityService {
 
         String screenText =
                 readScreen(root);
+    double fare =
+RideExtractor.extractFare(
+    screenText
+);
+
+
+double distance =
+RideExtractor.extractDistance(
+    screenText
+);
+
+
+String pickup =
+RideExtractor.extractPickup(
+    screenText
+);
+
+
+Log.d(
+"RideBot",
+"Fare : "+fare+
+" Distance : "+distance+
+" Pickup : "+pickup
+);
 
 
 
