@@ -18,32 +18,3 @@ plugins {
     id "com.android.application" version "8.3.2" apply false
 }
 include ":app"
-actions:[
-
-IconButton(
-
-icon:
-const Icon(Icons.settings),
-
-
-onPressed:(){
-
-Navigator.push(
-
-context,
-
-MaterialPageRoute(
-
-builder:
-(context)=>
-const SettingsScreen()
-
-)
-
-);
-
-}
-
-)
-
-]
