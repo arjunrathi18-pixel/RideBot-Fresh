@@ -73,6 +73,28 @@ RideFilterEngine()
 ride,
 settings
 );
+  await RideHistoryService.saveRide(
+
+platform:"Rapido",
+
+fare:ride.fare,
+
+distance:ride.distance,
+
+pickup:ride.pickup,
+
+drop:"",
+
+status:
+
+accept
+?
+"ACCEPTED"
+:
+"REJECTED"
+
+
+);
 
 
 
